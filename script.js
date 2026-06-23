@@ -94,3 +94,13 @@ function showPage(id){
   event.currentTarget.classList.add("activeBtn");
 }
 
+function openGift() {
+  const giftBox = document.querySelector(".giftBox");
+  const videoContainer = document.getElementById("videoContainer");
+  const video = document.getElementById("surpriseVideo");
+
+  giftBox.style.display = "none";
+  videoContainer.style.display = "block";
+
+  video.play();
+}
