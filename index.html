@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>İyiki Doğdunn</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="png" href="pasta.png">
+</head>
+<body>
+
+  <video autoplay muted loop class="bg-video">
+    <source src="arkaplan.mp4" type="video/mp4">
+</video>
+
+<!-- LOGIN -->
+<div id="loginPage">
+  <div class="loginBox">
+    <h1>-</h1>
+    <input type="password" id="password" placeholder="Şifreyi gir">
+    <button onclick="login()">Giriş Yap</button>
+    <p id="error"></p>
+  </div>
+</div>
+
+
+<!-- APP -->
+<div id="app" class="hidden">
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">🎂 Elif</div>
+
+    <div class="navMenu">
+      <button onclick="showPage('home')">🏠 Ana Sayfa</button>
+      <button onclick="showPage('messages')">💌 Mesajlar</button>
+      <button onclick="showPage('music')">🎵 Müzik</button>
+      <button onclick="showPage('gift')">🎁 Sürpriz</button>
+    </div>
+  </div>
+
+
+
+  <!-- MESSAGES -->
+  <div id="messages" class="page">
+    <h1>💌 Mesajlar</h1>
+
+    <div class="msgContainer">
+      <div class="msgCard" data-text="İyi ki doğdun 💖">
+        <span class="name">Bahar</span>
+        <p class="text"></p>
+      </div>
+
+      <div class="msgCard" data-text="Her şey senin için 🎉">
+        <span class="name">Yiğit</span>
+        <p class="text"></p>
+      </div>
+
+      <div class="msgCard" data-text="Nice mutlu yıllara ❤️">
+        <span class="name">Rabia</span>
+        <p class="text"></p>
+      </div>
+
+      <div class="msgCard" data-text="Nice mutlu yıllara ❤️">
+        <span class="name">Merve</span>
+        <p class="text">iyiki doğdun</p>
+      </div>
+
+      <div class="msgCard" data-text="Nice mutlu yıllara ❤️">
+        <span class="name">Sultan</span>
+        <p class="text"></p>
+      </div>
+
+      <div class="msgCard" data-text="Nice mutlu yıllara ❤️">
+        <span class="name">Kenan</span>
+        <p class="text"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MUSIC (DÜZELTİLDİ) -->
+  <div id="music" class="page">
+
+    <div class="music-player">
+      <img src="şarkı.jpg" alt="Müzik Kapak" class="cover">
+
+      <div class="info">
+        <h3>Başrol Sensin</h3>
+        <p>Manifest</p>
+      </div>
+
+      <button id="playBtn">▶</button>
+
+      <audio id="audio" src="manifest - Başrol Sensin - Official Music Video.mp3"></audio>
+    </div>
+
+  </div>
+
+  <!-- GIFT -->
+  <div id="gift" class="page">
+
+    <div class="giftContainer">
+      <span class="giftBadge">🎁 Özel Sürpriz</span>
+
+
+
+      <div class="giftBox" onclick="openGift()">🎁</div>
+
+      <div id="giftResult">
+        <div class="giftCard">
+          <h2>🎉 Sürpriz!</h2>
+          <p>
+            İyi ki doğdun. Umarım yeni yaşın mutluluk,
+            başarı ve güzel anılarla dolu olur. 💖
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
