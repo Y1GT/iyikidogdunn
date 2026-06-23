@@ -287,3 +287,42 @@ body {
   border: 1px solid rgba(255,255,255,.08);
 }
 
+.giftContainer{
+  text-align:center;
+}
+
+.giftBox{
+  width:200px;
+  height:200px;
+  margin:auto;
+  border-radius:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-size:70px;
+  cursor:pointer;
+  box-shadow:0 10px 30px rgba(0,0,0,.3);
+  transition:.3s;
+}
+
+.giftBox:hover{
+  transform:scale(1.05);
+}
+
+.giftBox p{
+  font-size:18px;
+  margin-top:10px;
+  color:#fff;
+}
+
+#videoContainer{
+  display:none;
+  margin-top:20px;
+}
+
+#surpriseVideo{
+  width:90%;
+  max-width:800px;
+  border-radius:20px;
+}
